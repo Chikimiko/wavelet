@@ -10,8 +10,7 @@ class Handler implements URLHandler {
             String[] parameters = url.getQuery().split("=");
             if (parameters[0].equals("s")) {
                 words.add(parameters[1]);
-                return(parameters[1]);
-                //return String.format("Word added to the list! The word added was %s", parameters[1]);
+                return String.format("Word added to the list! The word added was %s", parameters[1]);
             }
             
         } else if (url.getPath().equals("/search")) {
